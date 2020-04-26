@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*
+Theme Name:  Cera Child
+Theme URI:   https://www.themosaurus.com/cera
+Author:      Themosaurus
+Author URI:  https://www.themosaurus.com
+Description: Multi-Purpose Intranet & Extranet Membership, Social Network & BuddyPress Community Theme. Cera is a theme that integrates seamlessly with BuddyPress, Paid Memberships Pro, WooCommerce, BBPress, The Events Calendar, LearnDash and many more. It makes good use of the Customizer, allowing you to build a tailor-made Community plateform using custom color, typography and layout options.
+Version:     1.0.6
+License:     GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cera
+Tags:        one-column, two-columns, three-columns, left-sidebar, right-sidebar, flexible-header, buddypress, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, threaded-comments, rtl-language-support, translation-ready, theme-options
+Template:     cera
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Cera is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Its stylesheet borrows concepts from various established methodologies promoting code reuse above
+all. Files and directories are structured and named after SMACSS. Helper classes have been made
+with OOCSS in mind and finally, the namming convention tries to narrow the gap with BEM.
+
+This stylesheet follow the basic principles of CSS Guidilines http://cssguidelin.es/
+
+*/
+/**
+ * CONTENTS
+ *
+ * VARIABLES
+ * Variables.....................Globally-available variables and config (custom and from vendors).
+ *
+ * TOOLS
+ * Mixins........................Useful mixins.
+ * Functions.....................Useful functions.
+ * Placeholders..................Useful placeholders.
+ *
+ * VENDORS
+ * Bootstrap.....................Bootstrap framework files.
+ * Repaintless...................Repaintless framework files.
+ *
+ * BASE
+ * Accessibility.................Affecting the overall accessibility (Screen readers & co).
+ * Headings......................H1–H6 styles.
+ * Copy..........................Copy elements styles.
+ *
+ * LAYOUT
+ * Alignements...................Positionning content elements.
+ * Clearings.....................Clear all wrappers & regions.
+ * Containers....................Constraining elements.
+ * Regions.......................Define a global layout architecture for several components.
+ * Sidebars......................Sidebars styles.
+ * Wrappers......................Wrapping elements.
+ *
+ * COMPONENTS
+ * Breadcrumb....................Breadcrumb styles.
+ * Buttons.......................Buttton component styles.
+ * Captions......................Caption of gallery and media components.
+ * Cards.........................Card components for various posts items.
+ * Comments......................Comments thread styles.
+ * Embedded......................Embedded contents (iframe, object, emoji, etc.).
+ * Forms.........................All form components.
+ * Galleries.....................Gallery and gallery-item components.
+ * Infinite scroll...............Infinite scroll styles.
+ * Hero..........................Hero component styles.
+ * Media.........................Bootstrap Media component styles.
+ * Menus.........................Menu and content navigation styles.
+ * Navigation....................Main navigation component.
+ * Pagination....................Post navigation, Pager & Pagination.
+ * Posts.........................Posts archive & single styles.
+ * Sections......................Visual region components.
+ * Tables........................Tables styles.
+ * Widgets.......................Widget styles.
+ *
+ * PLUGINS
+ * Add to any....................Social and sharing plugin.
+ * Autocomplete for Relevanssi...Add autocomplete functionnality to Relevanssi plugin.
+ * Bbpress.......................Forum plugin.
+ * Buddypress....................User profile & community plugin.
+ * Contact form 7................Custom form plugin.
+ * The Events Calendar...........Events creation & management.
+ * Features......................Important blocs like services or values.
+ * Gravity forms.................Custom form plugin.
+ * Mailchimp for wp..............Mailchimp integration plugin.
+ * Ninja Forms...................Custom form plugin.
+ * Our team......................Team member plugin.
+ * Projects......................Projects/Portfolio plugin.
+ * Testimonials..................Testimonial plugin.
+ * Woo-plugins...................Common styles form plugins by Woothemes (Grid, utilities, etc.).
+ * Yarpp.........................Related posts plugin.
+ * Yoast SEO.....................SEO plugin.
+ * Woocommerce...................King of WordPress e-commerce plugin.
+ *
+ * PAGES
+ * 404............................Styles applied to 404 page.
+ *
+ * STATES
+ * JS............................Styles applied to components using JavaScript.
+ * No-js.........................Styles applied to components when JavaScript is disabled.
+ * Slideout......................Styles applied to components using Slideout.js.
+ * Grimlock fallback.............Styles applied to components whithout Grimlock activated..
+ *
+ * TRUMPS
+ * Animations....................Custom keyframes animations and transitions stuff.
+ * Background....................Extend Boostrap background utilities.
+ * Borders.......................Border utilities.
+ * Box...........................Box display utilities (Display, sizes and overflow).
+ * Positions.....................Positions and depth utilities.
+ * Text..........................Text utilities.
+ */
+.grimlock--navigation-fixed-left.sidebar-visitor #site {
+  margin-left: 0 !important; }
+
+.grimlock--navigation-fixed-left.grimlock--navigation-fixed.sidebar-visitor .hamburger-navbar {
+  left: 0 !important; }
+
+.grimlock--navigation-fixed-right.sidebar-visitor #site {
+  margin-right: 0 !important; }
+
+.grimlock--navigation-fixed-right.sidebar-visitor .hamburger-navbar {
+  right: 0 !important; }
+
+.main-navigation .navbar-nav > .current-menu-item > a, .main-navigation .navbar-nav > .current-menu-parent > a, .main-navigation .navbar-nav > .current-menu-ancestor > a, .main-navigation .navbar-nav > .menu-item > a:hover, .main-navigation .navbar-nav > .menu-item > a:active, .main-navigation .navbar-nav > .menu-item > a:focus, .main-navigation .navbar-nav > .menu-item.is-toggled > a, .navbar-search.navbar-search--animate:not(.navbar-search--open) .search-icon:hover {
+  background-color: #7841ff !important; }
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  background-color: #7841ff; }
+
+.documents-holder {
+  display: flex;
+  flex-wrap: wrap; }
+
+.document-item-wrap {
+  display: inline-block;
+  max-width: 25%;
+  width: 25%;
+  flex: 1 0 25%;
+  padding: 30px; }
+  @media screen and (min-width: 991px) and (max-width: 1200px) {
+    .document-item-wrap {
+      max-width: 33.333333%;
+      width: 33.333333%;
+      flex: 1 0 33.333333%; } }
+  @media screen and (min-width: 570px) and (max-width: 991px) {
+    .document-item-wrap {
+      max-width: 50%;
+      width: 50%;
+      flex: 1 0 50%; } }
+  @media screen and (max-width: 570px) {
+    .document-item-wrap {
+      max-width: 100%;
+      width: 100%;
+      flex: 1 0 100%; } }
+  .document-item-wrap .attachment-clip-cell {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    margin-top: 0; }
+  .document-item-wrap .tags-cell a {
+    font-size: calc(10px * 1.05); }
+  .document-item-wrap .date-cell {
+    width: 100%;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: calc(10px * 1.05);
+    margin: 10px 0 !important;
+    text-align: right; }
+  .document-item-wrap .document-item {
+    margin: 15px;
+    display: block;
+    width: 100%;
+    background: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.2);
+    transition: .3s ease-in-out;
+    text-align: center;
+    position: relative;
+    padding: 35px; }
+    .document-item-wrap .document-item:hover {
+      box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.3); }
+
+.document-item:after {
+  display: block;
+  content: ' '; }
+
+/*# sourceMappingURL=style.css.map */
